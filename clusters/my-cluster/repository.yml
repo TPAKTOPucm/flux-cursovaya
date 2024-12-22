@@ -99,13 +99,3 @@ spec:
   interval: 5m
   type: "oci"
   url: oci://cr.yandex/yc-marketplace/yandex-cloud/vault/chart
----
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
-metadata:
-  name: demo-app
-  namespace: flux-system
-spec:
-  interval: 5m
-  url: https://github.com/TPAKTOPucm/helm-cursovaya
-  branch: main
