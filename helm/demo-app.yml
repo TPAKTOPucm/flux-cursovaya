@@ -13,7 +13,7 @@ spec:
       chart: demo-app
       sourceRef:
         kind: GitRepository
-        name: demo-app
+        name: helm-cursovaya
         namespace: flux-system
       version: 1.0.0
   install:
