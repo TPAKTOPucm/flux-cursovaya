@@ -72,14 +72,15 @@ spec:
   interval: 5m
   url: https://kyverno.github.io/kyverno/
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta1
+apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: bitnami
   namespace: flux-system
 spec:
   interval: 5m
-  url: https://charts.bitnami.com/bitnami
+  type: "oci"
+  url: oci://registry-1.docker.io/bitnamicharts/
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
