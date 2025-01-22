@@ -10,7 +10,7 @@ spec:
   releaseName: demo-app
   chart:
     spec:
-      chart: demo-app
+      chart: helm-cursovaya
       sourceRef:
         kind: GitRepository
         name: helm-cursovaya
